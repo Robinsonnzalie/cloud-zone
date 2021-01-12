@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo ''We are doing some JJtech testing of jenkins'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'We are doing some testing of jenkins'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'We are waiting for Manny'
+            }
+        }
+    }
+}
